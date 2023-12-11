@@ -38,6 +38,8 @@ const Login = () => {
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             className={styles.input}
+            name='username'
+            autoComplete='username'
           />
         </div>
         <div className={styles.formGroup}>
@@ -48,6 +50,7 @@ const Login = () => {
             type="password"
             id="password"
             value={password}
+            autoComplete='password'
             onChange={(e) => setPassword(e.target.value)}
             className={styles.input}
           />
